@@ -17,13 +17,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+
+    - name: npm install, build
       run: |
         npm i
         npm run build
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.push }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./docs/.vuepress/dist
