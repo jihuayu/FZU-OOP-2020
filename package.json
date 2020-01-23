@@ -1,0 +1,24 @@
+{
+  "name": "FZU-OOP-2020",
+  "version": "1.0.0",
+  "description": "福州大学 2020 年面向对象程序设计作业集散仓库",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jihuayu/FZU-OOP-2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jihuayu/FZU-OOP-2020/issues"
+  },
+  "homepage": "https://github.com/jihuayu/FZU-OOP-2020#readme",
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  }
+}
