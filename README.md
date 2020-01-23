@@ -1,4 +1,8 @@
 # FZU-OOP-2020
+
+![GitHub issues](https://img.shields.io/github/issues-raw/jihuayu/FZU-OOP-2020)   ![GitHub pull requests](https://img.shields.io/github/issues-pr/jihuayu/FZU-OOP-2020)  ![GitHub contributors](https://img.shields.io/github/contributors/jihuayu/FZU-OOP-2020)
+
+
 福州大学 2020 年面向对象程序设计作业集散仓库  
 欢迎查看本仓库[对应的网页](https://oop.jihuayu.site/)
 

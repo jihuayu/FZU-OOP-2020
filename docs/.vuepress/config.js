@@ -1,6 +1,9 @@
 module.exports = {
     title: 'FZU OOP 2020',
     description: '福州大学 2020 年面向对象程序设计作业集散仓库',
+    head: [
+        ['link', { rel: 'icon', href: '/logo.png' }]
+    ],
     serviceWorker: false,
     themeConfig: {
         repo: 'jihuayu/FZU-OOP-2020',
@@ -32,13 +35,22 @@ module.exports = {
                             '/thinks/think0121',
                             '/thinks/think0122',
                             '/thinks/think0123',
-
                         ]
                     },
-                    '/tips'
+                    {
+                        title: '帮助',
+                        collapsable: true,
+                        children: [
+                            '/help/tips',
+                            '/help/base',
+                            '/help/issues',
+                            '/help/fork',
+                            '/help/pr',
+                        ]
+                    }
                 ]
             }
             
         }
     }
-}
+};
