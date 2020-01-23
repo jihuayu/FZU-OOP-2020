@@ -2,6 +2,7 @@ module.exports = {
     title: 'FZU OOP 2020',
     description: '福州大学 2020 年面向对象程序设计作业集散仓库',
     serviceWorker: false,
+    base: "FZU-OOP-2020",
     themeConfig: {
         repo: 'jihuayu/FZU-OOP-2020',
         editLinks: true,
