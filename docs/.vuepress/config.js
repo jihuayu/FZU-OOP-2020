@@ -15,7 +15,8 @@ module.exports = {
                     }
                 ],
                 sidebar: [
-                    '/tips',
+                    '使用手册',
+                    '课程要求',
                     {
                         title: '作业',
                         collapsable: true,
@@ -32,7 +33,8 @@ module.exports = {
                             '/thinks/think0122',
 
                         ]
-                    }
+                    },
+                    '/tips'
                 ]
             }
             
