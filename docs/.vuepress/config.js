@@ -31,6 +31,7 @@ module.exports = {
                         children: [
                             '/thinks/think0121',
                             '/thinks/think0122',
+                            '/thinks/think0123',
 
                         ]
                     },
