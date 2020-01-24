@@ -20,12 +20,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: clone
       run: |
-        echo {{github.ref}}
+        echo ${{ github.ref }}
         git clone  https://github.com/jihuayu/FZU-OOP-2020.git dist
         cd dist
         git checkout -b gh-pages origin/gh-pages
         shopt -s extglob 
-        number=$(echo {{github.ref}} | sed 's/refs\/pull\/\([0-9]*\)\/merge/\1/g')
+        number=$(echo ${{ github.ref }} | sed 's/refs\/pull\/\([0-9]*\)\/merge/\1/g')
         mkdir -p pr/${number}
         cd pr/${number}
         rm -fr *
@@ -36,7 +36,7 @@ jobs:
         npm run build
     - name: copy 
       run: |
-        number=$(echo {{github.ref}} | sed 's/refs\/pull\/\([0-9]*\)\/merge/\1/g')
+        number=$(echo ${{ github.ref }} | sed 's/refs\/pull\/\([0-9]*\)\/merge/\1/g')
         cp -r ./docs/.vuepress/dist/* dist/pr/${number}/
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
