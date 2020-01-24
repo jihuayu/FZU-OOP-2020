@@ -25,3 +25,9 @@
 用于整理issues逻辑，常用于应用有关联或者相似的issues。
 
 ![issues1.png](./res/issues5.png)
+
+## 关闭issue
+
+如果一个issues已经被解决，就可以关闭他，被关闭的issues可以重新被打开。
+
+![issues1.png](./res/issues6.png)
