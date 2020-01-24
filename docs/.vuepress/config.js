@@ -54,6 +54,14 @@ module.exports = {
                         ]
                     },
                     {
+                        title: '学习',
+                        collapsable: true,
+                        children: [
+                            '/learn/',
+                            '/learn/learn1',
+                        ]
+                    },
+                    {
                         title: '草案',
                         collapsable: true,
                         children: [
