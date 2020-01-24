@@ -1,4 +1,4 @@
-name: Node CI
+name: Deploy Master
 
 on: [push]
 
@@ -17,15 +17,22 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-
+    - name: clone
+      run: |
+        git clone  https://github.com/jihuayu/FZU-OOP-2020.git dist
+        git checkout -b gh-pages origin/gh-pages
     - name: npm install, build
       run: |
         npm i
         npm run build
-
+    - name: delete and copy
+      run: |
+        shopt -s extglob 
+        rm -fr dist !(pr)
+        cp -r ./docs/.vuepress/dist dist
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
         GITHUB_TOKEN: ${{ secrets.push }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./docs/.vuepress/dist
+        PUBLISH_DIR: dist
