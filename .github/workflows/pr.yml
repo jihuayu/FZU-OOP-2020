@@ -33,6 +33,8 @@ jobs:
     - name: npm install, build
       run: |
         npm i
+        number=$(echo ${{ github.ref }} | sed 's/refs\/pull\/\([0-9]*\)\/merge/\1/g')
+        export BASE=pr/${number}
         npm run build
     - name: copy 
       run: |
