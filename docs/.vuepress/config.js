@@ -24,6 +24,7 @@ module.exports = {
                         title: '作业',
                         collapsable: true,
                         children: [
+                            '/works/',
                             '/works/work0',
                             '/works/work1',
                             '/works/work1ex'
@@ -33,6 +34,7 @@ module.exports = {
                         title: '思考题',
                         collapsable: true,
                         children: [
+                            '/thinks/',
                             '/thinks/think0121',
                             '/thinks/think0122',
                             '/thinks/think0123',
@@ -42,11 +44,19 @@ module.exports = {
                         title: '帮助',
                         collapsable: true,
                         children: [
+                            '/help/',
                             '/help/tips',
                             '/help/base',
                             '/help/issues',
                             '/help/fork',
                             '/help/pr',
+                        ]
+                    },
+                    {
+                        title: '草案',
+                        collapsable: true,
+                        children: [
+                            '/draft/'
                         ]
                     }
                 ]
