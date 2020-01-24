@@ -25,7 +25,8 @@ module.exports = {
                         collapsable: true,
                         children: [
                             '/works/work0',
-                            '/works/work1'
+                            '/works/work1',
+                            '/works/work1ex'
                         ]
                     },
                     {
