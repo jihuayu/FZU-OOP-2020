@@ -30,7 +30,7 @@ jobs:
     - name: npm install, build
       run: |
         npm i
-        export BASE_URL=.
+        export BASE_URL=/
         npm run build
     - name: copy
       run: |
