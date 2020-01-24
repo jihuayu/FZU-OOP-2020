@@ -8,6 +8,7 @@
 欢迎也急需各位大佬来贡献文档，参与issues讨论，贡献思考题。
 
 欢迎查看本仓库[对应的网页](https://oop.jihuayu.site/)
+本仓库的PR构建地址 https://oop.jihuayu.site/pr/${pr_number}
 
 ## 你可以：
 - 在此仓库的 issues 中使用模板提出你的问题或建议（仅允许使用中文）。
