@@ -5,7 +5,7 @@ module.exports = {
         ['link', { rel: 'icon', href: '/logo.png' }]
     ],
     serviceWorker: false,
-    base:process.env.BASE,
+    base:process.env.BASE_URL,
     themeConfig: {
         repo: 'jihuayu/FZU-OOP-2020',
         editLinks: true,
