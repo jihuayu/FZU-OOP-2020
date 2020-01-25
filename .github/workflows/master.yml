@@ -41,3 +41,4 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.push }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: dist
+        GITHUB_REPOSITORY: jihuayu/FZU-OOP-2020
