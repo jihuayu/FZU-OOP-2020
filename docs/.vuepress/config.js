@@ -39,6 +39,8 @@ module.exports = {
                             '/thinks/think0121',
                             '/thinks/think0122',
                             '/thinks/think0123',
+                            '/thinks/think0125',
+
                         ]
                     },
                     {
