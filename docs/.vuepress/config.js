@@ -53,6 +53,7 @@ module.exports = {
                             '/help/issues',
                             '/help/fork',
                             '/help/pr',
+                            '/help/pr_tutorial',
                         ]
                     },
                     {
