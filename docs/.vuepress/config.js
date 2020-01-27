@@ -68,7 +68,8 @@ module.exports = {
                         title: '草案',
                         collapsable: true,
                         children: [
-                            '/draft/'
+                            '/draft/',
+                            '/draft/md_latex_tutorial',
                         ]
                     }
                 ]
