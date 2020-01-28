@@ -113,10 +113,10 @@ $\sum$    $\prod$    $\int$    $\infty$    $\nabla$
 $\sum\quad \prod\quad \int\quad \infty\quad \nabla$
 
 ```
-${ \text{d} \over \text{d}x }$     $\in$    $\not\in$    $\{\}$    $\emptyset$
+${ \text{d} \over \text{d}x }$     $\in$    $\notin$    $\{\}$    $\emptyset$
 ```
 
-${\text{d}\over\text{d}x}\quad \in\quad \not\in\quad \{\}\quad \emptyset$
+${\text{d}\over\text{d}x}\quad \in\quad \notin\quad \{\}\quad \emptyset$
 
 ```
 $\subset$    $\subsetneqq$    $\supset$    $\supsetneqq$    $\pm$
@@ -137,10 +137,10 @@ $\leq$    $\geq$    $\equiv$    $\approx$    $\cdot$
 $\leq\quad \geq \quad \equiv \quad \approx\quad \cdot$
 
 ```
-$\because$    $\therefore$    $\forall$    $\exist$    $\circ$
+$\because$    $\therefore$    $\forall$    $\exists$    $\circ$
 ```
 
-$\because\quad \therefore\quad \forall\quad \exist\quad \circ$
+$\because\quad \therefore\quad \forall\quad \exists\quad \circ$
 
 ```
 $\sum_{i=1}^{n+1} i$    $\int\ln x\text dx$    $\lim_{x\to 0}{\sin x\over x}$
