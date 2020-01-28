@@ -1,0 +1,25 @@
+name: pr
+
+on: pull_request
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: npm install, build
+      run: |
+        export BASE_URL=/$(echo ${{ github.repository }} | cut -d'/' -f 2)/
+        npm i && npm run build
+        rm docs/.vuepress/dist/CNAME
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ github.token }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: docs/.vuepress/dist
+        GITHUB_REPOSITORY: ${{ github.repository }}
