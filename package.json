@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jihuayu/FZU-OOP-2020#readme",
   "devDependencies": {
-    "vuepress": "^1.2.0",
-    "vuepress-plugin-mathjax": "^1.2.8"
+    "markdown-it-katex": "^2.0.3",
+    "vuepress": "^1.2.0"
   }
 }
