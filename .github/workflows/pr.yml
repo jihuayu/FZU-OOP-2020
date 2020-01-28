@@ -13,7 +13,7 @@ jobs:
         node-version: 12.x
     - name: npm install, build
       run: |
-        export BASE_URL=/$(echo ${{ github.repository }} | cut -d'/' -f 2)/
+        export BASE_URL=/FZU-OOP-2020/
         npm i && npm run build
         rm docs/.vuepress/dist/CNAME
     - name: Deploy
@@ -22,4 +22,4 @@ jobs:
         PERSONAL_TOKEN: ${{ github.token }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: docs/.vuepress/dist
-        GITHUB_REPOSITORY: ${{ github.repository }}
+        GITHUB_REPOSITORY: ${{ github.actor }}/FZU-OOP-2020
