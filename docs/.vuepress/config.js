@@ -6,6 +6,17 @@ module.exports = {
     ],
     serviceWorker: false,
     base:process.env.BASE_URL,
+    plugins: [
+        [
+            'vuepress-plugin-mathjax',
+            {
+              target: 'svg',
+              macros: {
+                '*': '\\times',
+              },
+            },
+        ],
+    ],
     themeConfig: {
         repo: 'jihuayu/FZU-OOP-2020',
         editLinks: true,

@@ -13,12 +13,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jihuayu/FZU-OOP-2020/issues"
   },
   "homepage": "https://github.com/jihuayu/FZU-OOP-2020#readme",
   "devDependencies": {
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-mathjax": "^1.2.8"
   }
 }
