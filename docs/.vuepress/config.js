@@ -2,21 +2,26 @@ module.exports = {
     title: 'FZU OOP 2020',
     description: '福州大学 2020 年面向对象程序设计作业集散仓库',
     head: [
-        ['link', { rel: 'icon', href: '/logo.png' }]
+        ['link', { rel: 'icon', href: '/logo.png' }],
+        ['link', {
+            rel: 'stylesheet',
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css'
+        }],
+        ['link', {
+            rel: 'stylesheet',
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css'
+        }],
     ],
     serviceWorker: false,
     base:process.env.BASE_URL,
-    plugins: [
-        [
-            'vuepress-plugin-mathjax',
-            {
-              target: 'svg',
-              macros: {
-                '*': '\\times',
-              },
-            },
-        ],
-    ],
+    markdown: {
+        extendMarkdown: md => {
+            md.set({
+                html: true
+            })
+            md.use(require('markdown-it-katex'))
+        }
+    },
     themeConfig: {
         repo: 'jihuayu/FZU-OOP-2020',
         editLinks: true,
