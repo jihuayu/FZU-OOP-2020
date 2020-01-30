@@ -86,6 +86,7 @@ module.exports = {
                         children: [
                             '/draft/',
                             '/draft/md_latex_tutorial',
+                            '/draft/md_base',
                         ]
                     }
                 ]
