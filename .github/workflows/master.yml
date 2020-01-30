@@ -22,7 +22,7 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
-        PERSONAL_TOKEN: ${{ github.token }}
+        PERSONAL_TOKEN: ${{ secrets.push }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: docs/.vuepress/dist
         GITHUB_REPOSITORY: ${{ github.repository }}
