@@ -46,7 +46,7 @@ git commit -m "message"
 ## 提交
 
 ```sh
-git push origin master
+git push origin my_branch
 ```
 
 ## PR
